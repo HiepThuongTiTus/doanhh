@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Giao diện</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-sm-3 col-4" id="myScrollspy">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><h5 style="color:rgb(105, 105, 107)">&#10040;Câu lệnh Điều Khiển</h5></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#section1"><h6 style="color:blue; font-weight: bold;">&#10154;Mệnh đề IF-ELSE</h6></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2"><h6 style="color:blue; ">&#10154;Mệnh đề SWITCH-CASE</h6></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section3"><h6 style="color:blue; ">&#10154;Vòng lặp FOR</h6></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section4"><h6 style="color:blue; ">&#10154;Vòng lặp WHILE</h6></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section5"><h6 style="color:blue; ">&#10154;Vòng lặp DO-WHILE</h6></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section6"><h6 style="color:blue; ">&#10154;BREAK trong java</h6></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section7"><h6 style="color:blue; ">&#10154;CONTINUE trong java</h6></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section8"><h6 style="color:blue; ">&#10154;Chương trình java kinh điển</h6></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9 col-8">
+      <div id="section1" class="bg-success">    
+            <div> 
+                <h4 class="gach">Mệnh đề if - else trong java </h4> 
+                <div class="chux"> 
+                    <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Toán tử trong java</p>
+                    <p class="chux1">Mệnh đề Switch-case trong java <i class="fas fa-arrow-circle-right"></i></p>    
+                </div>
+                <p class="menhde">Mệnh đề if trong java được sử dụng để kiểm tra giá trị dạng boolean của điều kiện.
+                    Mệnh đề này trả về giá trị <strong>True </strong> hoặc <strong>False</strong>. Có các kiểu của mệnh đề if-else trong java như sau:
+                    <ul>
+                        <li>Mệnh đề if</li>
+                        <li> Mệnh đề if-else</li>
+                        <li>Mệnh đề if-else-if</li>
+                    </ul>
+                </p>
+
+                <div class="noidung">
+                    <strong><h5>Nội dung chính</h5></strong>
+                    <ul>
+                        <li class="maul">Mệnh đề if</li>
+                        <li class="maul"> Mệnh đề if-else</li>
+                        <li class="maul">Mệnh đề if-else-if</li>
+                    </ul>
+                </div>
+
+                <h2>Mệnh đề if</h2>
+                <p>Mệnh đề if được sử dụng để kiểm tra giá trị dạng boolean của điều kiện. Khối lệnh sau if được thực thi nếu giá trị của điều kiện là <strong>True</strong></p>
+                <u><strong><p>Cú pháp: </p></strong></u>
+
+                <div style="background-color: white">
+                    <ol> 
+                        <li>if (condition)  {</li>
+                        <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                        <li style="padding-left:50px">//nếu condition = true </li>
+                        <li>}</li> 
+                    </ol>
+                </div>
+                
+                <img src="images/menh-de-if-else-trong-java.png" alt="." style="margin-left: 350px">
+            <u><strong><p>Ví dụ: </p></strong></u>
+                <div style="background-color: rgb(235, 147, 107)">
+                    <ol>
+                        <li style="padding-left:10px">public class Test { </li>
+                        <li style="padding-left:80px">public static void main(String[] args) { </li>
+                        <li style="padding-left:100px">int age = 20;</li>
+                        <li style="padding-left:100px">if (age > 18) {</li>
+                        <li style="padding-left:150px">System.out.print("Tuổi lớn hơn 18");</li> 
+                        <li style="padding-left:100px">}</li>
+                        <li style="padding-left:50px">} </li> 
+                        <li style="padding-left:10px">}</li>
+                    </ol>
+                </div>
+                <u><strong><p>Kết quả: </p></u></strong>
+                <p class="tuoi" style="background-color: rgb(235, 147, 107)">Tuổi lớn hơn 18</p>
+    <hr>
+            <h2>Mệnh đề if-else</h2>
+            <p>Mệnh đề if-else cũng kiểm tra giá trị dạng boolean của điều kiện. 
+                Nếu giá trị điều kiện là <strong>True</strong> thì chỉ có khối lệnh sau if sẽ được thực hiện, 
+                nếu là <strong>False</strong> thì chỉ có khối lệnh sau else được thực hiện.</p>
+                <u><strong><p>Cú pháp: </p></strong></u>
+                <div style="background-color:white">
+                    <ol> 
+                        <li>if (condition)  {</li>
+                        <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                        <li style="padding-left:50px">//nếu condition = true </li>
+                        <li>}</li> 
+                        <li>else { </li>
+                            <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                            <li style="padding-left:50px">//nếu condition = false </li>
+                        <li>}</li> 
+                    </ol>
+                </div>
+            <u><strong><p>Ví dụ: </p></strong></u>
+            <div style="background-color: rgb(235, 147, 107)">
+                <ol>
+                    <li style="padding-left:10px">public class Test { </li>
+                    <li style="padding-left:50px">public static void main(String[] args) { </li>
+                    <li style="padding-left:80px">int number = 13;</li> 
+                    <li style="padding-left:80px">if (number % 2 == 0) {</li>
+                    <li style="padding-left:100px">System.out.println("Số " + number + " là số chẵn.");</li>
+                    <li style="padding-left:80px"> } else { </li> 
+                    <li style="padding-left:100px">System.out.println("Số " + number + " là số lẻ."); </li>
+                    <li style="padding-left:80px">  }</li>
+                    <li style="padding-left:50px">} </li>
+                    <li style="padding-left:10px">}</li>
+                </ol> 
+            </div>
+            <u><strong><p>Kết quả: </p></u></strong>
+            <p class="tuoi" style="background-color: rgb(235, 147, 107)">Số 13 là số lẻ.</p>
+            <hr>
+            <h2>Mệnh đề if-else-if</h2>
+            <p>Mệnh đề if-else-if cũng kiểm tra giá trị dạng boolean của điều kiện.
+            Nếu giá trị điều kiện if là <strong>True</strong> thì chỉ có khối lệnh sau if sẽ được thực hiện.
+            Nếu giá trị điều kiện if else nào là <strong>True</strong> thì chỉ có khối lệnh sau else if đó sẽ được thực hiện... 
+            Nếu tất cả điều kiện của if và else if là <strong>False</strong> thì chỉ có khối lệnh sau else sẽ được thực hiện.</p>
+            <u><strong><p>Cú pháp: </p></strong></u>
+            <div style="background-color: white">
+                <ol> 
+                    <li>if (condition1)  {</li>
+                    <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                    <li style="padding-left:50px">//nếu condition1 = true </li>
+                    <li>}</li> 
+                    <li>else if (condition2) </li>
+                        <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                        <li style="padding-left:50px">//nếu condition2 = true </li>
+                    <li>}</li> 
+                    <li>else if (condition3)</li>
+                        <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                        <li style="padding-left:50px">//nếu condition3 = true </li>
+                    <li>}</li> 
+                    <li>...</li>
+                    <li>else</li>
+                    <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                    <li style="padding-left:50px">//nếu tất cả những điều kiện trên là false</li>
+                <li>}</li> 
+                </ol>
+            </div> 
+            <u><strong><p>Ví dụ: </p></strong></u>
+            <div style="background-color: rgb(235, 147, 107)">
+                <ol>
+                    <li style="padding-left:10px">public class Test { </li>
+                    <li style="padding-left:50px">public static void main(String[] args) { </li>
+                    <li style="padding-left:80px">int marks = 65;</li>
+                    <li style="padding-left:80px"> if (marks < 50) { </li>
+                    <li style="padding-left:100px"> System.out.println("Tạch!");</li>
+                    <li style="padding-left:80px">} else if (marks >= 50 && marks < 60) { </li>
+                    <li style="padding-left:100px">  System.out.println("Xếp loại D"); </li>
+                    <li style="padding-left:80px"></li>} else if (marks >= 60 && marks < 70) { </li>
+                    <li style="padding-left:100px"> System.out.println("Xếp loại C"); </li>
+                    <li style="padding-left:80px"> } else if (marks >= 70 && marks < 80) { </li>
+                    <li style="padding-left:100px">  System.out.println("Xếp loại B"); </li>
+                    <li style="padding-left:80px">} else if (marks >= 80 && marks < 90) {</li>
+                    <li style="padding-left:100px">System.out.println("Xếp loại A");</li>
+                    <li style="padding-left:80px">} else if (marks >= 90 && marks < 100) {</li>
+                    <li style="padding-left:100px">System.out.println("Xếp loại A+");</li>
+                    <li style="padding-left:80px">} else {</li>
+                    <li style="padding-left:100px">System.out.println("Giá trị không hợp lệ!");</li>
+                    <li style="padding-left:80px">}</li>
+                    <li style="padding-left:50px">}</li>
+                    <li style="padding-left:10px">}</li>
+                </ol>
+            </div>
+    <u><strong><p>Kết quả: </p></u></strong>
+    <p class="tuoi" style="background-color: white">Xếp loại C</p>
+    <hr>
+
+    <div class="chux"> 
+            <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Toán tử trong java</p>
+            <p class="chux1">Mệnh đề Switch-case trong java <i class="fas fa-arrow-circle-right"></i></p>    
+        </div>
+
+        </div> 
+      </div>
+      <div id="section2" class="bg-success"> 
+        <div> 
+            <h4 class="gach">Mệnh đề Switch-case trong java </h4> 
+            <div class="chux"> 
+                <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Mệnh đề Switch-case trong java</p>
+                <p class="chux1">Vòng lặp Switch-case trong java <i class="fas fa-arrow-circle-right"></i></p>    
+            </div>
+            <p class="menhde">Mệnh đề switch-case trong java được sử dụng để thực thi 1 hoặc nhiều khối lệnh từ nhiều điều kiện.
+                <u><strong><p>Cú pháp: </p></u></strong>
+                <ol style="background-color:white">
+                    <li><strong style="color: blue;"> switch</strong> (bieu_thuc) {  </li>  
+                    <li><strong  style="color: blue;">case </strong> gia_tri_1: </li>
+                    <li style="padding-left:80px">// Khối lệnh 1 </li>
+                    <li style="padding-left:80px"> <strong style="color: blue;"> break;</strong>//tùy chọn </li>
+                    <li> <strong  style="color: blue;">case</strong> gia_tri_2:   </li> 
+                    <li style="padding-left:80px">// Khối lệnh 2 </li>
+                    <li style="padding-left:80px"><strong style="color: blue;"> break;</strong> //tùy chọn </li>
+                    <li>......  </li>  
+                    <li> <strong  style="color: blue;">case</strong> gia_tri_n:   </li>  
+                    <li style="padding-left:80px">// Khối lệnh n </li>
+                    <li style="padding-left:80px"><strong style="color: blue;"> break;</strong> //tùy chọn  </li>   
+                    <li><strong style="color: blue;">default:</strong>    </li> 
+                    <li style="padding-left:80px">// Khối lệnh này được thực thi </li>
+                    <li style="padding-left:80px">// nếu tất cả các điều kiện trên không thỏa mãn </li>
+                    <li>}  </li>
+                </ol>
+            </p>
+
+            <img src="images/menh-de-switch-case-trong-java.png" alt="." style="margin-left: 180px;">
+
+            <u><strong><p>Ví dụ về mệnh lệnh switch-case:</p></strong></u>
+            <div style="background-color: rgb(235, 147, 107)">
+                <ol>
+                    <li style="padding-left:10px"><strong style="color: blue;"> public class</strong> SwitchExample { </li>
+                    <li style="padding-left:80px"><strong style="color: blue;"> public static void</strong> main(String[] args) { </li>
+                    <li style="padding-left:80px"><strong style="color: blue;">int</strong> number = 20;</li>
+                    <li style="padding-left:80px"><strong style="color: blue;">switch</strong> (number)</li>
+                    <li style="padding-left:80px"><strong style="color: blue;">case 10:</strong></li> 
+                    <li style="padding-left:100px">System.out.println("10");</li>
+                    <li style="padding-left:100px"><strong style="color: blue;">break;</strong></li> 
+                    <li style="padding-left:80px"><strong style="color: blue;">case 20:</strong></li> 
+                    <li style="padding-left:100px">System.out.println("20");</li>
+                    <li style="padding-left:100px"><strong style="color: blue;">break;</strong></li>
+                    <li style="padding-left:80px"><strong style="color: blue;">case 30:</strong></li> 
+                    <li style="padding-left:100px">System.out.println("30");</li>
+                    <li style="padding-left:100px"><strong style="color: blue;">break;</strong></li>
+                    <li style="padding-left:80px"><strong style="color: blue;">default</strong></li> 
+                    <li style="padding-left:100px">System.out.println("Not in 10, 20 or 30");</li>
+                    <li style="padding-left:50px">}</li>
+                    <li style="padding-left:30px">}</li>
+                    <li style="padding-left:10px">}</li>
+                </ol>
+            </div>
+            <u><strong><p>Kết quả: </p></u></strong>
+            <p class="tuoi" style="background-color: rgb(235, 147, 107)">Kết quả: 20</p>
+<hr>
+
+        <div class="noidung">
+            <strong><h5>Nội dung chính</h5></strong>
+            <ul>
+                <li class="maul">Mệnh đề if</li>
+                <li class="maul"> Mệnh đề if-else</li>
+                <li class="maul">Mệnh đề if-else-if</li>
+            </ul>
+        </div>
+        <h2>Mệnh đề if-else</h2>
+        <p>Mệnh đề if-else cũng kiểm tra giá trị dạng boolean của điều kiện. 
+            Nếu giá trị điều kiện là <strong>True</strong> thì chỉ có khối lệnh sau if sẽ được thực hiện, 
+            nếu là <strong>False</strong> thì chỉ có khối lệnh sau else được thực hiện.</p>
+            <u><strong><p>Cú pháp: </p></strong></u>
+            <div style="background-color:white">
+                <ol> 
+                    <li>if (condition)  {</li>
+                    <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                    <li style="padding-left:50px">//nếu condition = true </li>
+                    <li>}</li> 
+                    <li>else { </li>
+                        <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                        <li style="padding-left:50px">//nếu condition = false </li>
+                    <li>}</li> 
+                </ol>
+            </div>
+        <u><strong><p>Ví dụ: </p></strong></u>
+        <div style="background-color: rgb(235, 147, 107)">
+            <ol>
+                <li style="padding-left:10px">public class Test { </li>
+                <li style="padding-left:50px">public static void main(String[] args) { </li>
+                <li style="padding-left:80px">int number = 13;</li> 
+                <li style="padding-left:80px">if (number % 2 == 0) {</li>
+                <li style="padding-left:100px">System.out.println("Số " + number + " là số chẵn.");</li>
+                <li style="padding-left:80px"> } else { </li> 
+                <li style="padding-left:100px">System.out.println("Số " + number + " là số lẻ."); </li>
+                <li style="padding-left:80px">  }</li>
+                <li style="padding-left:50px">} </li>
+                <li style="padding-left:10px">}</li>
+            </ol> 
+        </div>
+        <u><strong><p>Kết quả: </p></u></strong>
+        <p class="tuoi" style="background-color: rgb(235, 147, 107)">Số 13 là số lẻ.</p>
+        <hr>
+        <h2>Mệnh đề if-else-if</h2>
+        <p>Mệnh đề if-else-if cũng kiểm tra giá trị dạng boolean của điều kiện.
+        Nếu giá trị điều kiện if là <strong>True</strong> thì chỉ có khối lệnh sau if sẽ được thực hiện.
+        Nếu giá trị điều kiện if else nào là <strong>True</strong> thì chỉ có khối lệnh sau else if đó sẽ được thực hiện... 
+        Nếu tất cả điều kiện của if và else if là <strong>False</strong> thì chỉ có khối lệnh sau else sẽ được thực hiện.</p>
+        <u><strong><p>Cú pháp: </p></strong></u>
+        <div style="background-color: white;">
+            <ol> 
+                <li>if (condition1)  {</li>
+                <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                <li style="padding-left:50px">//nếu condition1 = true </li>
+                <li>}</li> 
+                <li>else if (condition2) </li>
+                    <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                    <li style="padding-left:50px">//nếu condition2 = true </li>
+                <li>}</li> 
+                <li>else if (condition3)</li>
+                    <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                    <li style="padding-left:50px">//nếu condition3 = true </li>
+                <li>}</li> 
+                <li>...</li>
+                <li>else</li>
+                <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                <li style="padding-left:50px">//nếu tất cả những điều kiện trên là false</li>
+            <li>}</li> 
+            </ol>
+        </div> 
+        <u><strong><p>Ví dụ: </p></strong></u>
+        <div style="background-color: rgb(235, 147, 107)">
+            <ol>
+                <li style="padding-left:10px">public class Test { </li>
+                <li style="padding-left:50px">public static void main(String[] args) { </li>
+                <li style="padding-left:80px">int marks = 65;</li>
+                <li style="padding-left:80px"> if (marks < 50) { </li>
+                <li style="padding-left:100px"> System.out.println("Tạch!");</li>
+                <li style="padding-left:80px">} else if (marks >= 50 && marks < 60) { </li>
+                <li style="padding-left:100px">  System.out.println("Xếp loại D"); </li>
+                <li style="padding-left:80px"></li>} else if (marks >= 60 && marks < 70) { </li>
+                <li style="padding-left:100px"> System.out.println("Xếp loại C"); </li>
+                <li style="padding-left:80px"> } else if (marks >= 70 && marks < 80) { </li>
+                <li style="padding-left:100px">  System.out.println("Xếp loại B"); </li>
+                <li style="padding-left:80px">} else if (marks >= 80 && marks < 90) {</li>
+                <li style="padding-left:100px">System.out.println("Xếp loại A");</li>
+                <li style="padding-left:80px">} else if (marks >= 90 && marks < 100) {</li>
+                <li style="padding-left:100px">System.out.println("Xếp loại A+");</li>
+                <li style="padding-left:80px">} else {</li>
+                <li style="padding-left:100px">System.out.println("Giá trị không hợp lệ!");</li>
+                <li style="padding-left:80px">}</li>
+                <li style="padding-left:50px">}</li>
+                <li style="padding-left:10px">}</li>
+            </ol>
+        </div>
+   <u><strong><p>Kết quả: </p></u></strong>
+   <p class="tuoi" style="background-color: rgb(235, 147, 107)">Xếp loại C</p>
+   <hr>
+
+   <div class="chux"> 
+        <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Toán tử trong java</p>
+        <p class="chux1">Mệnh đề Switch-case trong java <i class="fas fa-arrow-circle-right"></i></p>    
+    </div>
+
+        </div>
+      </div>  
+      <div id="section3" class="bg-success">    
+        <div> 
+            <h4 class="gach">Vòng lặp FOR trong java</h4> 
+            <div class="chux"> 
+                <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Mệnh đề Switch-case trong java </p>
+                <p class="chux1"><i class="fas fa-arrow-circle-right"></i> Vòng lặp while trong java </p>    
+            </div>
+            <p class="menhde">Vòng lặp for trong java được sử dụng để lặp một phần của chương trình nhiều lần. Nếu số lần lặp là cố định thì vong lặp for được khuyến khích sử dụng, còn nếu số lần lặp không cố định thì nên sử dụng vòng lặp while hoặc do while.
+                <strong>Có 3 kiểu của vòng lặp for trong java:</strong>
+                <ul>
+                    <li>Vòng lặp for đơn giản</li>
+                    <li>Vòng lặp for cải tiến</li>
+                    <li>Vòng lặp for gán nhãn</li>
+                </ul>
+            </p>
+
+            <div class="noidung">
+                <strong><h5>Nội dung chính</h5></strong>
+                <ul>
+                    <li class="maul">Vòng lặp for đơn giản</li>
+                    <li class="maul">Vòng lặp for cải tiến</li>
+                    <li class="maul">Vòng lặp for gán nhãn</li>
+                </ul>
+            </div>
+
+            <h2>Vòng lặp for đơn giản</h2>
+            <p>Vòng lặp for đơn giản giống như trong C/C++. Chúng ta có thể khởi tạo biến, kiểm tra điều kiện và tăng/giảm giá trị của biến.</p>
+            <u><strong><p>Cú pháp: </p></strong></u>
+
+            <div style="background-color: white">
+                <ol> 
+                    <li>for (khoi_tao_bien ; check_dieu_kien ; tang/giam_bien) { </li>
+                    <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                    <li>}</li> 
+                </ol>
+            </div>
+            
+            <img src="images/menh-de-for-trong-java.png" alt="." style="margin-left: 350px">
+        <u><strong><p>Ví dụ: </p></strong></u>
+            <div style="background-color: rgb(235, 147, 107)">
+                <ol>
+                    <li style="padding-left:10px">public class ForExample {</li>
+                    <li style="padding-left:80px">public static void main(String[] args) { </li>
+                    <li style="padding-left:100px"> for (int i = 1; i <= 10; i++) {</li>
+                    <li style="padding-left:150px"> System.out.println(i);</li>
+                    <li style="padding-left:100px">}</li>
+                    <li style="padding-left:50px">} </li> 
+                    <li style="padding-left:10px">}</li>
+                </ol>
+            </div>
+            <u><strong><p>Kết quả: </p></u></strong>
+            <p class="tuoi" style="background-color: rgb(235, 147, 107)">
+                1 <br> 2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+            </p>
+<hr>
+        <h2>Vòng lặp For cải tiến</h2>
+        <p>Vòng lặp for cải tiến được sử dụng để lặp mảng(array) hoặc collection trong java. Bạn có thể sử dụng nó dễ dàng, dễ hơn cả vòng lặp for đơn giản. Bởi vì bạn không cần phải tăng hay giảm giá trị của biến rồi check điều kiện, bạn chỉ cần sử dụng ký hiệu hai chấm ":"</p>
+            <u><strong><p>Cú pháp: </p></strong></u>
+            <div style="background-color:white">
+                <ol> 
+                    <li>for (Type var : array) { </li>
+                    <li style="padding-left:50px">//khối lệnh này thưc thi </li>
+                    <li>}</li> 
+                </ol>
+            </div>
+        <u><strong><p>Ví dụ: </p></strong></u>
+        <div style="background-color: rgb(235, 147, 107)">
+            <ol>
+                <li style="padding-left:10px">public class ForEachExample { </li>
+                <li style="padding-left:50px">public static void main(String[] args) { </li>
+                <li style="padding-left:80px">int arr[] = { 12, 23, 44, 56, 78 };</li> 
+                <li style="padding-left:80px">for (int i : arr) {</li>
+                <li style="padding-left:100px">System.out.println(i);</li>
+                <li style="padding-left:80px">}</li>
+                <li style="padding-left:50px">} </li>
+                <li style="padding-left:10px">}</li>
+            </ol> 
+        </div>
+        <u><strong><p>Kết quả: </p></u></strong>
+        <p class="tuoi" style="background-color: rgb(235, 147, 107)">
+            12<br>23<br>44<br>56<br>78
+        </p>
+        <hr>
+        <h2>Vòng lặp for gán nhãn</h2>
+        <p>Chúng ta có để đặt tên cho mỗi vòng lặp for bằng cách gán nhãn trước vòng lặp for. Điều này rất hữu dụng khi chúng ta muốn thoát/tiếp tục(break/continues) chạy vòng lặp for.</p>
+        <u><strong><p>Cú pháp: </p></strong></u>
+        <div style="background-color: white">
+            <ol> 
+                <li>ten_nhan:</li>
+                <li style="padding-left:50px">for (khoi_tao_bien ; check_dieu_kien ; tang/giam_bien) {  </li>
+                <li style="padding-left:50px">//khối lệnh này thực thi </li>
+                <li>}</li> 
+            </ol>
+        </div> 
+        <u><strong><p>Ví dụ: </p></strong></u>
+        <div style="background-color: rgb(235, 147, 107)">
+            <ol>
+                <li style="padding-left:10px">public class LabeledForExample { </li>
+                <li style="padding-left:50px">public static void main(String[] args) { </li>
+                <li style="padding-left:80px">aa: for (int i = 1; i <= 3; i++) {</li>
+                <li style="padding-left:100px">bb: for (int j = 1; j <= 3; j++) {</li>
+                <li style="padding-left:80px">if (i == 2 && j == 2) {</li>
+                <li style="padding-left:100px">  break aa;</li>
+                <li style="padding-left:80px"> }</li>
+                <li style="padding-left:100px">  System.out.println(i + " " + j); </li>
+                <li style="padding-left:80px">}</li>
+                <li style="padding-left:60px">}</li>
+                <li style="padding-left:50px">}</li>
+                <li style="padding-left:10px">}</li>
+            </ol>
+        </div>
+        <u><strong><p>Kết quả: </p></u></strong>
+        <p class="tuoi" style="background-color: white">
+            1 1<br> 1 2 <br> 1 3<br> 2 1<br>
+        </p>
+        <hr>
+
+        <div class="chux"> 
+                <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Mệnh đề Switch-case trong java </p>
+                <p class="chux1">Vòng lặp while trong java<i class="fas fa-arrow-circle-right"></i></p>    
+        </div>
+
+    </div> 
+       
+      </div>
+      <div id="section3" class="bg-success">    
+        <div> 
+            <h4 class="gach">Vòng lặp While trong java</h4> 
+            <div class="chux"> 
+                <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Vòng lặp while trong java</p>
+                <p class="chux1"><i class="fas fa-arrow-circle-right"></i>Vòng lặp do-while trong java</p>    
+            </div>
+
+            <div class="noidung">
+                <strong><h5>Nội dung chính</h5></strong>
+                <ul>
+                    <li class="maul">Vòng lặp while trong java</li>
+                    <li class="maul">Vòng lặp while vô tận</li>
+                </ul>
+            </div>
+
+            <h2>Vòng lặp while trong java</h2>
+            <p><strong>Vòng lặp while trong java</strong> được sử dụng để lặp một phần của chương trình một vài lần. Nếu số lần lặp không được xác định trước thì vòng lặp lặp while được khuyến khích sử dụng trong trường hợp này.</p>
+            <u><strong><p>Cú pháp: </p></strong></u>
+
+            <div style="background-color: white">
+                <ol> 
+                    <li>while(condition) { </li>
+                    <li style="padding-left:50px">// Khối lệnh được lặp lại cho đến khi condition = False</li>
+                    <li>}</li> 
+                </ol>
+            </div>
+            
+            <img src="images/menh-de-while-trong-java.png" alt="." style="margin-left: 350px">
+        <u><strong><p>Ví dụ: </p></strong></u>
+            <div style="background-color: rgb(235, 147, 107)">
+                <ol>
+                    <li style="padding-left:10px">public class WhileExample1 {</li>
+                    <li style="padding-left:80px">public static void main(String[] args) { </li>
+                    <li style="padding-left:100px">int i = 1;</li>
+                    <li style="padding-left:150px"> while (i <= 10) {</li>
+                    <li style="padding-left:100px">System.out.println(i);</li>
+                    <li style="padding-left:100px">i++;</li>
+                    <li style="padding-left:100px">}</li>
+                    <li style="padding-left:50px">} </li> 
+                    <li style="padding-left:10px">}</li>
+                </ol>
+            </div>
+            <u><strong><p>Kết quả: </p></u></strong>
+            <p class="tuoi" style="background-color: rgb(235, 147, 107)">
+                1 <br> 2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10
+            </p>
+<hr>
+        <h2>Vòng lặp While vô tận</h2>
+        <p>Nếu bạn để điều kiện lặp là True thì vòng lặp while sẽ chạy đến vô tận... Đến khi bạn stop chương trình đối với mỗi IDE(Eclipse, Netbean...) hoặc bấm Ctrl + C khi chạy bằng command.</p>
+    
+        <u><strong><p>Ví dụ về vòng lặp while vô tận trong java:: </p></strong></u>
+        <div style="background-color: rgb(235, 147, 107)">
+            <ol>
+                <li style="padding-left:10px">public class WhileExample2 { </li>
+                <li style="padding-left:50px">public static void main(String[] args) { </li>
+                <li style="padding-left:80px">while (true) {</li> 
+                <li style="padding-left:100px">System.out.println("Vòng lặp while vô tận...");</li>
+                <li style="padding-left:80px">}</li>
+                <li style="padding-left:50px">} </li>
+                <li style="padding-left:10px">}</li>
+            </ol> 
+        </div>
+        <u><strong><p>Kết quả: </p></u></strong>
+        <p class="tuoi" style="background-color: rgb(235, 147, 107)">
+            Vòng lặp while vô tận...<br>
+            Vòng lặp while vô tận...<br>
+            Vòng lặp while vô tận...<br>
+            Vòng lặp while vô tận...<br>
+            Vòng lặp while vô tận...<br>
+            Ctrl + C
+        </p>
+        <hr>
+        <div class="chux"> 
+                <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Vòng lặp for trong java</p>
+                <p class="chux1"><i class="fas fa-arrow-circle-right"></i>Vòng lặp do-while trong java</p>    
+        </div>
+
+    </div> 
+       
+      </div>
+      <div id="section4" class="bg-success">    
+        <div> 
+            <h4 class="gach">Sử dụng Break trong java</h4> 
+            <div class="chux"> 
+                <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Vòng lặp do-while trong java</p>
+                <p class="chux1"><i class="fas fa-arrow-circle-right"></i>Sử dụng continue trong java </p>    
+            </div>
+
+            <div class="noidung">
+                <strong><h5>Nội dung chính</h5></strong>
+                <ul>
+                    <li class="maul">Sử dụng Break trong java</li>
+                    <li class="maul">Sử dụng Break với vòng lặp for</li>
+                    <li class="maul">Sử dụng Break với mệnh đề switch-case</li>
+                </ul>
+            </div>
+
+            <h2>Sử dụng Break trong java</h2>
+            <u><strong><p>Ví dụ sử dụng break với vòng lặp for:: </p></strong></u>
+            <div style="background-color: rgb(235, 147, 107)">
+                <ol>
+                    <li style="padding-left:10px">public class BreakExample {</li>
+                    <li style="padding-left:80px">public static void main(String[] args) { </li>
+                    <li style="padding-left:150px"> for (int i = 1; i <= 10; i++) {{</li>
+                    <li style="padding-left:100px">if (i == 5) {</li>
+                    <li style="padding-left:100px">break;</li>
+                    <li style="padding-left:100px">System.out.println(i);</li>
+                    <li style="padding-left:80px">} </li> 
+                    <li style="padding-left:50px">} </li> 
+                    <li style="padding-left:10px">}</li>
+                </ol>
+            </div>
+            <u><strong><p>Kết quả: </p></u></strong>
+            <p class="tuoi" style="background-color: rgb(235, 147, 107)">
+                1 <br> 2<br>3<br>4
+            </p>
+<hr>
+        <u><strong><p>Ví dụ sử dụng break với vòng lặp bên trong vòng lặp for khác:</p></strong></u>
+        <div style="background-color: rgb(235, 147, 107)">
+            <ol>
+                <li style="padding-left:10px">public class BreakExample2 { </li>
+                <li style="padding-left:50px">public static void main(String[] args) { </li>
+                <li style="padding-left:80px">for (int i = 1; i <= 3; i++) {</li> 
+                <li style="padding-left:100px">for (int j = 1; j <= 3; j++) {</li>
+                <li style="padding-left:80px"> if (i == 2 && j == 2) {</li>
+                <li style="padding-left:100px">break;</li>
+                <li style="padding-left:80px">}</li>
+                <li style="padding-left:80px">System.out.println(i + " " + j);</li>
+            </ol> 
+        </div>
+        <u><strong><p>Kết quả: </p></u></strong>
+        <p class="tuoi" style="background-color: rgb(235, 147, 107)">
+            1 1<br>
+            1 2<br>
+            1 3<br>
+            2 1<br>
+            3 1<br>
+            3 2<br>
+            3 3<br>
+        </p>
+        <hr>
+
+        <h2>Sử dụng Break với mệnh đề switch-case</h2>
+        <u><p>Để hiểu cách sử dụng break với mệnh đề switch-case, bạn có thể tham khảo bài học này <strong>Mệnh đề switch-case trong java</p></strong></u>
+      
+
+        <div class="chux"> 
+                <p class="chux2"> <i class="fas fa-arrow-alt-circle-left"></i>Vòng lặp do-while trong java</p>
+                <p class="chux1"><i class="fas fa-arrow-circle-right"></i>Sử dụng continue trong java</p>    
+        </div>
+
+    </div> 
+       
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
